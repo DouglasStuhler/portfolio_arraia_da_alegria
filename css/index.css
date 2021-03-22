@@ -1,0 +1,154 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+#nav {
+  width: 100vw;
+  z-index: 20;
+  height: 100vh;
+  transition: height 1s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#nav .logo {
+  width: 90vw;
+  height: 20vh;
+  margin: 2vh 5vw 0;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #671f06;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  transition: all 10s ease-in-out;
+  background-color: white;
+}
+#nav .logo a img:first-child {
+  height: 14vh;
+  width: auto;
+  margin: 2vh 0 4vh 5vw;
+}
+#nav .logo .btn {
+  height: 8vh;
+  width: auto;
+  margin: 6vh 6vw 5vh 0;
+}
+#nav #escondido {
+  margin-left: -100vw;
+}
+#nav #direita {
+  margin-left: 100vw;
+}
+#nav .menu {
+  width: 90vw;
+  box-sizing: border-box;
+  margin: 0vh 5vw 0 5vw;
+  transition: all 1s ease-in-out;
+}
+#nav .menu ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 2px solid #671f06;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+}
+#nav .menu ul li {
+  list-style: none;
+}
+#nav .menu ul li a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  padding: 2.5vh 0;
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+#banner {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #11426d;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#banner .circulo {
+  width: 90vw;
+  height: 90vw;
+  border-radius: 50%;
+  background-color: #1e4b74;
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
+  z-index: 1;
+}
+#banner .conteúdo {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/chao.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100vw 25vh;
+  background-position: center bottom;
+  z-index: 2;
+}
+#banner .conteúdo img:first-child {
+  width: 90vw;
+  position: absolute;
+  top: 4vh;
+  left: 9vw;
+  z-index: 2;
+}
+#banner .conteúdo img {
+  width: 60vw;
+  position: absolute;
+  bottom: 10vh;
+  left: 20vw;
+  z-index: 2;
+}
+#banner .conteúdo a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #fbb703;
+  font-size: 7vw;
+  padding: 1.7vh 9vw;
+  border-radius: 2vw;
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  top: 42vh;
+  left: 21.4285714286vw;
+  text-align: center;
+}
+
+#oq {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #d3a267;
+}
+
+/*# sourceMappingURL=index.css.map */
